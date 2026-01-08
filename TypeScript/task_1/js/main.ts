@@ -1,21 +1,19 @@
-// js/main.ts
-
 interface Teacher {
-  readonly firstName: string; // yalnız inicializasiya zamanı təyin olunur
-  readonly lastName: string;  // yalnız inicializasiya zamanı təyin olunur
+  readonly firstName: string;
+  readonly lastName: string;
   fullTimeEmployee: boolean;
-  yearsOfExperience?: number; // optional
+  yearsOfExperience?: number;
   location: string;
-  [key: string]: any; // əlavə hər hansı property əlavə etməyə imkan verir
+  [key: string]: any;
 }
 
-// Teacher obyektinin yaradılması
 const teacher3: Teacher = {
-  firstName: 'John',
-  lastName: 'Doe',
+  firstName: "John",
+  lastName: "Doe",
   fullTimeEmployee: false,
-  location: 'London',
-  contract: false, // əlavə property
+  location: "London",
+  contract: false
 };
 
 console.log(teacher3);
+
