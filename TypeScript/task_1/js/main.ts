@@ -1,19 +1,16 @@
-interface Teacher {
-  readonly firstName: string;
-  readonly lastName: string;
-  fullTimeEmployee: boolean;
-  yearsOfExperience?: number;
-  location: string;
-  [key: string]: any;
+// Task 2: Directors interface extending Teacher
+interface Directors extends Teacher {
+  numberOfReports: number; // additional property for directors
 }
 
-const teacher3: Teacher = {
+// Example director object
+const director1: Directors = {
   firstName: "John",
   lastName: "Doe",
-  fullTimeEmployee: false,
+  fullTimeEmployee: true,
   location: "London",
-  contract: false
+  numberOfReports: 17
 };
 
-console.log(teacher3);
+console.log(director1);
 
