@@ -21,8 +21,9 @@ function sumMinorCredits(subject1: MinorCredits, subject2: MinorCredits): MinorC
 // Test
 const major1: MajorCredits = { credits: 3, _brand: "Major" };
 const major2: MajorCredits = { credits: 2, _brand: "Major" };
+console.log(sumMajorCredits(major1, major2)); // { credits: 5, _brand: "Major" }
+
 const minor1: MinorCredits = { credits: 1, _brand: "Minor" };
 const minor2: MinorCredits = { credits: 2, _brand: "Minor" };
-
-console.log(sumMajorCredits(major1, major2)); // { credits: 5, _brand: "Major" }
 console.log(sumMinorCredits(minor1, minor2)); // { credits: 3, _brand: "Minor" }
+
