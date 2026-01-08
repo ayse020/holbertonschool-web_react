@@ -1,3 +1,11 @@
+type Subjects = "Math" | "History";function teachClass(todayClass: Subjects): string {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    } else {
+        return "Teaching History";
+    }
+}
+
 // Director sinfi
 class Director {
     workFromHome() {
@@ -47,3 +55,5 @@ function executeWork(employee: Director | Teacher) {
 // Test
 executeWork(createEmployee(200));   // Expected: "Getting to work"
 executeWork(createEmployee(1000));  // Expected: "Getting to director tasks"
+console.log(teachClass("Math"));      // Expected output: Teaching Math
+console.log(teachClass("History"));   // Expected output: Teaching History
